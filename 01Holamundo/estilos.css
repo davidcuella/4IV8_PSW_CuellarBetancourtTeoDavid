@@ -1,0 +1,26 @@
+#principal {
+    border: solid 5px #0011fc;
+    padding: 7px;
+    margin: 0 auto;
+    width: 80%;
+    background-color: #18bce6;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+legend {
+    border: solid 3px #2bff00;
+    padding: 5px;
+    font-weight: bold;
+    background: #f80000 ;
+    border-radius: 15px;
+}
+#fotoxd {
+    border: solid 2px;
+    margin: 10px;
+}
+body {
+    background-color: #32fc008e;
+}
