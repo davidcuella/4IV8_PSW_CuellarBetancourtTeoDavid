@@ -1,0 +1,77 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla Dinamica</title>
+  <script src="js/01Formulario.js" ></script>
+  <title>COMICS</title>
+  <link rel="stylesheet" href="css/01Style.css">
+</head>
+
+<script type="text/javascript" >
+  function obtenerdatos(){
+    var capital =document.getElementById("capital").value;
+    var interes =document.getElementById("interes").value;
+    var meses =document.getElementById("meses").value;
+  }
+ 
+
+
+</script>
+
+<div class="tablita" id="tab">
+  <form>
+   <div class="form-group">
+    <p>
+      <label>Ingrese el Capital Original:</label> <br>
+      <input id="capital" class="form-control" type="text" placeholder="Capital (P)..."><br>
+    </p>
+    <p>
+      <label>Entre los intereses:</label> <br>
+      <input id="interes" class="form-control" type="text" placeholder="Interes Mensual (I)..."><br>
+    </p>
+    <p>
+      <label>Ingrese los Meses</label> <br>
+      <input id="meses" class="form-control" type="text" placeholder="Meses (I)"> <br>
+    </p>
+    <br>
+        <input type="button" name="enviar" value="Enviar" onclick="obtenerdatos()">
+    <br>
+
+    <p>Elementos en la Tabla:
+      <div id="adicionados"></div>
+    </p>
+    
+    <body>
+      <table id="tdi"  border="1" cellpadding="1" cellspacing="1" id="table">
+        <thead>
+          <th  bgcolor="white">Capital</th>
+          <th bgcolor="white">Interes</th>
+          <th bgcolor="white">Meses</th>
+        </thead>
+      </table>
+      <br>
+      <input type="button" onclick="insertarFila()" value="Insertar datos">
+      <script>
+          function insertarFila() {
+              let tdi = document.getElementById('tdi').insertRow(0);
+              let col1 = tdi.insertCell(0);
+              let col2 = tdi.insertCell(1);
+              let col3 = tdi.insertCell(2);
+              
+              col1.innerHTML = 'P';
+              col2.innerHTML = 'I';
+              col3.innerHTML = 'N';
+          }
+      </script>
+
+
+
+  </div>
+</form>
+
+
+</body>
+
+</html>
