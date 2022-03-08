@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>Automovil</title>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="facturasxd/css/main.css" />
+    </head>
+
+    <body>
+        <div id="page-wrapper">
+                <header id="header">
+                    <nav id="nav">
+                        <ul>
+                            <li class="especial">
+                                <a href="nummenu" class="menuFacturacion"><span>Menu</span></a>
+                                <div id="menu">
+                                    <ul>
+                                        <td id="total_total">0.00</td>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <article id="main">
+                    <header style="padding-top: 50px; padding-bottom: 50px;" >
+                        <h2>Facturacion</h2>
+                        <p>Tabla dinámica  Automovil</p>
+                    </header>
+                    <section class="wrapper style5">
+                        <div class="medas">
+                            <section>
+                                <h2 style="text-align: center;">Datos Iniciales</h2>
+
+                                <form method="post" action="#">
+                                    <div class="row uniform">
+
+                                        <div class="8u 12u$(xsmall)">
+                                            <input type="text" name="name" id="name" value="" placeholder="Nombre Cliente" />
+                                        </div>
+                                        <div class="2u 12u$(xsmall)">
+                                            <input type="text" name="codigo" id="codigo" value="" placeholder="Codigo"/>
+                                        </div>
+
+                                        <div class="2u$ 12u$(xsmall)">
+                                            <input type="text" name="precio" id="precio" value="" placeholder="Precio" onkeyup="format(this)" onchange="format(this)"/>
+                                        </div>	
+    
+                                    <br>
+                                    <div class="12u$">
+                                        <ul class="actions" style="text-align: center">
+                                            <li><input type="button" value="Agregar" class="principal" id="add_row"/></li>
+                                        </ul>
+                                    </div>
+                                    <br>
+                                    <br>
+
+                                    <div class="table-wrapper">
+                                        <table id="tabla_factura">
+                                            <thead>
+                                                <tr>
+                                                    <th>Precio</th>
+                                                    <th>Subtotal</th>
+                                                    <th>Interes Compuesto</th>
+                                                    <th>Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="content_table">
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td colspan="3"></td>
+                                                    <td id="total_catidad">0.00</td>
+                                                    <td id="total_precio">0.00</td>
+                                                    <td id="total_subtotales">0.00</td>
+                                                    <td id="total_impuesto">0.00</td>
+                                                    <td id="total_total">0.00</td>
+                                                    <td id="interes compuesto">0.00</td>
+                                                    <td></td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </form>
+                            </section>
+                            <br> 
+                            <br>
+                            <br>
+                        </div>
+                    </section>
+                </article>
+
+       
+        </div>
+
+   
+        
+
+</body>
+</html>
+            
+        </article>
+    </body>
+</html>
