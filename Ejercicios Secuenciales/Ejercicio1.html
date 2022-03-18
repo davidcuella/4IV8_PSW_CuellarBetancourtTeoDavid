@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Ejercicio uno</title>
+	<link rel="stylesheet" href="css/estilo2.css" >
+    <meta charset="utf-8">
+    <style type="text/css">
+      
+      body{
+        min-height: 100vh;
+        margin: 0;
+        background: lightblue;
+        font-family: cursive;
+        font-size: 25px;
+        color:black;
+      }
+      input{
+        width: 100px;
+        height: 30px;
+      }
+    </style>
+</head>
+<body>
+    <script src=js/Ejercicio1.js></script>
+	<div class="menu">
+
+	</div>
+	<nav class="navegador">
+		<a href="index.html" class="awa">Inicio</a>
+		<a href="Ejercicio1.html" class="awa">Ejercicio 1</a>
+		<a href="Ejercicio2.html" class="awa">Ejercicio 2</a>
+		<a href="Ejercicio3.html" class="awa">Ejercicio 3</a>
+		<a href="Ejercicio4.html" class="awa">Ejercicio 4</a>
+		<a href="Ejercicio5.html" class="awa">Ejercicio 5</a>
+		<a href="Ejercicio6.html" class="awa">Ejercicio 6</a>
+	</nav>
+    <form method="get" name="formula">
+        Bienvenido a Banco Azteca :)
+        <br><br>
+        Ingresa la cantidad a invertir:
+        <br><br>
+        <input type="number" name="dineroinicial" min="1" max="99999999" step="0.1">$
+        <br><br>
+        Le recordamos que nuestro banco tiene una taza de crecimiento del 2% mensual
+        <br><br>
+        <input type="button" name="start" value="calcular" onclick="interes()">
+        <br><br>
+        
+        por lo que su dinero después de un mes sería:
+        <br><br>
+        <input type="number" name="interesgenerado" min="1" max="999999999" readonly="readonly">
+        <br><br>
+    </form>
+	
+</body>
+</html>

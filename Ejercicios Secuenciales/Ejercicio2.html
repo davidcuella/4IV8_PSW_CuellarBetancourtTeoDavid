@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Ejercicio dos</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilo2.css" >
+    <meta charset="utf-8">
+    <style type="text/css">
+      
+      body{
+        min-height: 100vh;
+        margin: 0;
+        background: lightblue;
+        font-family:cursive;
+        font-size: 25px;
+        color:black;
+      }
+      input{
+        width: 100px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <script src=js/Ejercicio2.js></script>
+    <div class="menu">
+    </div>
+    	<nav class="navegador">
+            <a href="index.html" class="awa">Inicio</a>
+            <a href="Ejercicio1.html" class="awa">Ejercicio 1</a>
+            <a href="Ejercicio2.html" class="awa">Ejercicio 2</a>
+            <a href="Ejercicio3.html" class="awa">Ejercicio 3</a>
+            <a href="Ejercicio4.html" class="awa">Ejercicio 4</a>
+            <a href="Ejercicio5.html" class="awa">Ejercicio 5</a>
+            <a href="Ejercicio6.html" class="awa">Ejercicio 6</a>
+        </nav>
+        <form method="get" name="formula">
+            Ingrese sueldo Base:
+            <br><br>
+            <input type="number" name="sueldo" min="1" max="999999999" step="0.5">
+            <br><br>
+            Ingrese la cantidad de cada una de sus ventas:
+            <br><br>
+            Escriba la cantidad de la primer venta
+            <input type="number" name="v1" min="1" max="999999999"> 
+            <br><br>
+            Escriba la cantidad de la segunda venta
+            <input type="number" name="v2" min="1" max="999999999">
+            <br><br>
+            Escriba la cantidad de la tercer venta
+            <input type="number" name="v3" min="1" max="999999999">
+            <br><br>
+            <input type="button" name="start" value="calcular" onclick="calcular()">
+            <br>
+            Concepto por comisiones:
+            <input type="number" name="porcentaje" min="1" max="999999999" readonly="readonly">
+            <br><br>
+            Sueldo total del mes:
+            <input type="number" name="total" min="1" max="999999999" readonly="readonly">
+      
+          </form>
+
+
+  </body>
+</html>

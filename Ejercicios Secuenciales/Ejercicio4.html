@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Ejercicio cuatro</title>
+	<link rel="stylesheet" href="css/estilo2.css" >
+    <meta charset="utf-8">
+    <style type="text/css">
+      
+      body{
+        min-height: 100vh;
+        margin: 0;
+        background: lightblue;
+        font-family:cursive;
+        font-size: 25px;
+        color:black;
+      }
+      input{
+        width: 100px;
+        height: 30px;
+      }
+    </style>
+</head>
+<body>
+    <script src=js/Ejercicio4.js></script>
+	<div class="menu">
+
+	</div>
+	<nav class="navegador">
+		<a href="index.html" class="awa">Inicio</a>
+		<a href="Ejercicio1.html" class="awa">Ejercicio 1</a>
+		<a href="Ejercicio2.html" class="awa">Ejercicio 2</a>
+		<a href="Ejercicio3.html" class="awa">Ejercicio 3</a>
+		<a href="Ejercicio4.html" class="awa">Ejercicio 4</a>
+		<a href="Ejercicio5.html" class="awa">Ejercicio 5</a>
+		<a href="Ejercicio6.html" class="awa">Ejercicio 6</a>
+	</nav>
+    <form method="post" name="formula">
+        Ingresa las califiaciones obtenidas(0-10)
+        <br><br>
+        Primer parcial:
+        <input type="number" name="p1" min="0" max="10">
+        <br><br>
+        Segundo parcial:
+        <input type="number" name="p2" min="0" max="10">
+        <br><br>
+        Tercer parcial:
+        <input type="number" name="p3" min="0" max="10">
+        <br><br><br>
+        Examen final:
+        <input type="number" name="examen" min="0" max="10">
+        <br><br><br>
+  
+        Trabajo final:
+        <input type="number" name="trabajo" min="0" max="10">
+        <br><br>
+        <input type="button" name="calcular" value="Calcular" onclick="llamar()"  class="bt">
+        <br><br>
+  
+      </form>
+	
+</body>
+</html>

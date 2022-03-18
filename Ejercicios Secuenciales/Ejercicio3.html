@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Ejercicio tres</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilo2.css" >
+    <meta charset="utf-8">
+    <style type="text/css">
+      
+      body{
+        min-height: 100vh;
+        margin: 0;
+        background: lightblue;
+        font-family: cursive;;
+        font-size: 25px;
+        color:black;
+      }
+      input{
+        width: 200px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <script src=js/Ejercicio3.js></script>
+    <div class="menu">
+    </div>
+    	<nav class="navegador">
+            <a href="index.html" class="awa">Inicio</a>
+            <a href="Ejercicio1.html" class="awa">Ejercicio 1</a>
+            <a href="Ejercicio2.html" class="awa">Ejercicio 2</a>
+            <a href="Ejercicio3.html" class="awa">Ejercicio 3</a>
+            <a href="Ejercicio4.html" class="awa">Ejercicio 4</a>
+            <a href="Ejercicio5.html" class="awa">Ejercicio 5</a>
+            <a href="Ejercicio6.html" class="awa">Ejercicio 6</a>
+        </nav>
+        <form method="get" name="formula">
+            
+            <input type="button" name="animales" value="Mascostas" onclick="compras()" class="bot">
+            <input type="button" name="comida" value="Alimentos" onclick="compras()" class="bot">
+            <input type="button" name="ropa" value="Ropa" onclick="compras()" class="bot">
+            <input type="button" name="belleza" value="Cuidado Personal" onclick="compras()" class="bot">
+            <input type="button" name="tecno" value="Electrónica" onclick="compras()" class="bot">
+           
+            <br><br>
+            Compra sin el descuento:
+            <input type="number" name="precio" readonly="readonly">
+            <br><br>
+           Total a pagar con descuento incluido:
+            <input type="text" name="total" readonly="readonly">
+            <br><br>
+            <input type="reset" name="borrar" value="Limpiar">
+            <br><br>
+            Este boton borra todas las cantidades que hayas ingresado antes
+            <br><br>
+            <input type="button" name="reiniciar" value="Borrar cantidades actuales" onclick="clean()">
+          </form>
+
+
+  </body>
+</html>

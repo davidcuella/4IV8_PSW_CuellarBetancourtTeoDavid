@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Ejercicio cuatro</title>
+	<link rel="stylesheet" href="css/estilo2.css" >
+    <meta charset="utf-8">
+    <style type="text/css">
+      
+      body{
+        min-height: 100vh;
+        margin: 0;
+        background: lightblue;
+        font-family: cursive;
+        font-size: 25px;
+        color:black;
+      }
+      input{
+        width: 100px;
+        height: 30px;
+      }
+    </style>
+</head>
+<body>
+    <script src=js/Ejercicio6.js></script>
+	<div class="menu">
+
+	</div>
+	<nav class="navegador">
+		<a href="index.html" class="awa">Inicio</a>
+		<a href="Ejercicio1.html" class="awa">Ejercicio 1</a>
+		<a href="Ejercicio2.html" class="awa">Ejercicio 2</a>
+		<a href="Ejercicio3.html" class="awa">Ejercicio 3</a>
+		<a href="Ejercicio4.html" class="awa">Ejercicio 4</a>
+		<a href="Ejercicio5.html" class="awa">Ejercicio 5</a>
+		<a href="Ejercicio6.html" class="awa">Ejercicio 6</a>
+	</nav>
+    <form method="get" name="formula">
+        Año de naciemiento:
+        <input type="number" name="añonacimien" min="1" max="4000">
+        <br><br>
+        Año vigente:
+        <input type="number" name="añovigen" min="1000" max="99999">
+        <br><br>
+        Mes de nacimiento:
+        <select name="mesnacimien">
+          <option value="1">Enero
+          <option value="2">Febrero
+          <option value="3">Marzo
+          <option value="4">Abril
+          <option value="5">Mayo
+          <option value="6">Junio
+          <option value="7">Julio
+          <option value="8">Agosto
+          <option value="9">Septiembre
+          <option value="10">Octubre
+          <option value="11">Noviembre
+          <option value="12">Diciembre
+        </select>
+        <br><br>
+        Mes vigente:
+        <select name="mesvigen">
+          <option value="1">Enero
+          <option value="2">Febrero
+          <option value="3">Marzo
+          <option value="4">Abril
+          <option value="5">Mayo
+          <option value="6">Junio
+          <option value="7">Julio
+          <option value="8">Agosto
+          <option value="9">Septiembre
+          <option value="10">Octubre
+          <option value="11">Noviembre
+          <option value="12">Diciembre
+        </select>
+        <br><br>
+        Dia de nacimiento:
+        <input type="number" name="dianacimien" min="1" max=31>
+        <br><br>
+        Dia vigente:
+        <input type="number" name="diavigen" min="1" max="31">
+        <br><br>
+        <input type="button" value="Calcular edad" onclick="determina()" class="b0t">
+  
+      </form>
+</body>
+</html>

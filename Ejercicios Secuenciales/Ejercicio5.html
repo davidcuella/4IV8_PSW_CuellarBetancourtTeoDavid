@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Ejercicio cinco</title>
+	<link rel="stylesheet" href="css/estilo2.css" >
+    <meta charset="utf-8">
+    <style type="text/css">
+      
+      body{
+        min-height: 100vh;
+        margin: 0;
+        background: lightblue;
+        text-align: center;
+        font-family: cursive;
+        font-size: 25px;
+        color:black;
+      }
+      input{
+        width: 100px;
+        height: 30px;
+      }
+    </style>
+</head>
+<body>
+    <script src=js/Ejercicio5.js></script>
+	<div class="menu">
+
+	</div>
+	<nav class="navegador">
+		<a href="index.html" class="awa">Inicio</a>
+		<a href="Ejercicio1.html" class="awa">Ejercicio 1</a>
+		<a href="Ejercicio2.html" class="awa">Ejercicio 2</a>
+		<a href="Ejercicio3.html" class="awa">Ejercicio 3</a>
+		<a href="Ejercicio4.html" class="awa">Ejercicio 4</a>
+		<a href="Ejercicio5.html" class="awa">Ejercicio 5</a>
+		<a href="Ejercicio6.html" class="awa">Ejercicio 6</a>
+	</nav>
+    <form method="post" name="formula">
+        <br><br>
+        Ingrese el numero de mujeres que hay en el grupo:
+        <input type="number" name="mujeres" min="0">
+        <br><br>
+        ingrese el numero de hombres que hay en el grupo:
+        <input type="number" name="hombres" min="0">
+        <br><br>
+        Tu grupo tiene:
+        <input type="number" name="total"  readonly="readonly">Estudiantes
+        <br><br>
+        <input type="button" value="Calcular" onclick="validar()" class="bot">
+        <br><br><br>
+        Porcentaje de mujeres:
+        <input type="text" name="pmuj">%
+        <br><br>
+        Porcentaje de hombres:
+        <input type="text" name="phom">%
+  
+      </form>
+	
+</body>
+</html>

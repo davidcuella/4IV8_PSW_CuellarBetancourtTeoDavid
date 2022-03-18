@@ -1,0 +1,30 @@
+
+body{
+  margin: 0;
+  background-color: rgb(0, 139, 81);
+  background-size: 100% 1000px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-attachment: fixed;
+  color: #f2f2f2;
+   font-size: 20px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+  position: relative;
+  display:flex;
+  bottom: -670px;
+  left: 80px;
+}
+
+.awa{
+  background-color: rgb(122, 166, 247);
+  color: #f2f2f2;
+  text-decoration: none;
+  font: 15px Verdana;
+  margin: 8px;
+  border: 2px solid #ff0000;
+  padding: 7px;
+  border: 5px;
+  transition: background 1s, color 1s, opacity 3s;
+}
